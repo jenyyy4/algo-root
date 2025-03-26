@@ -11,7 +11,7 @@ const Sidebar = () => {
               to="/dashboard"
               className={({ isActive }) =>
                 `font-semibold block px-4 py-2 rounded-lg transition ${
-                  isActive ? "bg-[#d4a373]" : "bg-white"
+                  isActive ? "bg-[#d4a373]" : "bg-white text-[#d4a373]"
                 }`
               }
             >
