@@ -37,6 +37,7 @@ function App() {
           {user && <Sidebar />}
           <div className="flex-1 p-6">
             <Routes>
+              <Route path="/" element={<Navigate to={user ? "/dashboard" : "/login"} />} />
               <Route path="/login" element={!user ? <Login /> : <Navigate to="/dashboard" />} />
               <Route path="/dashboard" element={user ? <Dashboard /> : <Navigate to="/login" />} />
             </Routes>
